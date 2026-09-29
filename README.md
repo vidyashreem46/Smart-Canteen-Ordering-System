@@ -54,26 +54,26 @@ Delivered
 
 ### 👤 Customer
 
-- One common QR code for the restaurant/canteen
-- Select one of 4 tables
-- Enter customer name
-- Browse the digital menu
-- Search food items
-- Select item quantities
-- View cart and grand total
-- Place orders digitally
-- Track order status
-- Choose Online Payment or Cash to Waiter
-- View payment status
-- Download a digital bill
-- Place another order
+* One common QR code for the restaurant/canteen
+* Select one of 4 tables
+* Enter customer name
+* Browse the digital menu
+* Search food items
+* Select item quantities
+* View cart and grand total
+* Place orders digitally
+* Track order status
+* Choose Online Payment or Cash to Waiter
+* View payment status
+* Download a digital bill
+* Place another order
 
 ### 👨‍🍳 Kitchen
 
-- View new and preparing orders
-- View customer and table details
-- View ordered food items
-- Update order status:
+* View new and preparing orders
+* View customer and table details
+* View ordered food items
+* Update order status:
 
 ```text
 New → Preparing → Ready
@@ -81,21 +81,21 @@ New → Preparing → Ready
 
 ### 🧑‍🍳 Waiter
 
-- View food-ready orders
-- See the table and customer for each order
-- Mark orders as Delivered
-- Manage pending cash collections
+* View food-ready orders
+* See the table and customer for each order
+* Mark orders as Delivered
+* Manage pending cash collections
 
 ### 📊 Admin
 
-- View total orders
-- View total paid sales
-- View active orders
-- View unpaid orders
-- View recent orders
-- View menu items
-- Edit food prices
-- Enable or disable menu items
+* View total orders
+* View total paid sales
+* View active orders
+* View unpaid orders
+* View recent orders
+* View menu items
+* Edit food prices
+* Enable or disable menu items
 
 ---
 
@@ -103,10 +103,10 @@ New → Preparing → Ready
 
 The project supports exactly **4 tables**:
 
-- Table 1
-- Table 2
-- Table 3
-- Table 4
+* Table 1
+* Table 2
+* Table 3
+* Table 4
 
 Instead of creating a separate QR code for every table, the system uses **one common QR code**.
 
@@ -126,14 +126,14 @@ Instead of creating a separate QR code for every table, the system uses **one co
 
 The application contains the following menu categories:
 
-- **Breakfast**
-- **Main Course**
-- **Snacks**
-- **Chats**
-- **Hot Beverages**
-- **Cold Beverages**
-- **Fresh Juices**
-- **Desserts**
+* **Breakfast**
+* **Main Course**
+* **Snacks**
+* **Chats**
+* **Hot Beverages**
+* **Cold Beverages**
+* **Fresh Juices**
+* **Desserts**
 
 The menu includes items such as Idli, Vada, Dosa, Meals, Pulao, Fried Rice, Noodles, Samosa, Pani Puri, Tea, Coffee, Juices, Ice Cream, Brownie, and more.
 
@@ -141,14 +141,14 @@ The menu includes items such as Idli, Vada, Dosa, Meals, Pulao, Fried Rice, Nood
 
 ## 🛠️ Technology Stack
 
-| Technology | Purpose |
-|---|---|
-| Python | Application development |
-| Streamlit | Web-based user interface |
-| SQLite | Database management |
-| Pandas | Data handling |
-| QRCode | QR code generation |
-| Pillow | Image processing |
+| Technology | Purpose                  |
+| ---------- | ------------------------ |
+| Python     | Application development  |
+| Streamlit  | Web-based user interface |
+| SQLite     | Database management      |
+| Pandas     | Data handling            |
+| QRCode     | QR code generation       |
+| Pillow     | Image processing         |
 
 ---
 
@@ -162,33 +162,33 @@ The database contains:
 
 Stores:
 
-- Food category
-- Food name
-- Price
-- Availability
+* Food category
+* Food name
+* Price
+* Availability
 
 ### Orders
 
 Stores:
 
-- Order ID
-- Table number
-- Customer name
-- Total amount
-- Order status
-- Payment method
-- Payment status
-- Timestamp
+* Order ID
+* Table number
+* Customer name
+* Total amount
+* Order status
+* Payment method
+* Payment status
+* Timestamp
 
 ### Order Items
 
 Stores:
 
-- Order ID
-- Item name
-- Quantity
-- Price
-- Subtotal
+* Order ID
+* Item name
+* Quantity
+* Price
+* Subtotal
 
 The local database file `canteen.db` is intentionally excluded from GitHub through `.gitignore`.
 
@@ -216,8 +216,8 @@ This allows the kitchen, waiter, and customer to follow the progress of an order
 
 The system supports two payment methods:
 
-- **Online Payment**
-- **Cash to Waiter**
+* **Online Payment**
+* **Cash to Waiter**
 
 For online payment, the current project uses a **demo confirmation workflow** rather than a live payment gateway.
 
@@ -298,16 +298,16 @@ Smart-Canteen-Ordering-System/
 
 ### Main Files
 
-**app.py**  
+**app.py**
 Main Streamlit application containing the customer, kitchen, waiter, QR, and admin workflows.
 
-**requirements.txt**  
+**requirements.txt**
 Contains the Python packages required to run the project.
 
-**.gitignore**  
+**.gitignore**
 Prevents files such as the local SQLite database and Python cache files from being uploaded to GitHub.
 
-**README.md**  
+**README.md**
 Project documentation and setup instructions.
 
 ---
@@ -327,15 +327,19 @@ Project documentation and setup instructions.
 ```
 
 ### Customer
+
 Places orders and tracks order status.
 
 ### Kitchen
+
 Receives orders and updates preparation status.
 
 ### Waiter
+
 Delivers ready orders and manages cash collections.
 
 ### Admin
+
 Monitors orders, sales, and menu information.
 
 ---
@@ -358,14 +362,14 @@ The main objectives of the project are:
 
 The system can be adapted for:
 
-- College canteens
-- School cafeterias
-- Office cafeterias
-- Company food courts
-- Small restaurants
-- Hotels
-- Hospitals
-- Workplace cafeterias
+* College canteens
+* School cafeterias
+* Office cafeterias
+* Company food courts
+* Small restaurants
+* Hotels
+* Hospitals
+* Workplace cafeterias
 
 ---
 
@@ -373,18 +377,18 @@ The system can be adapted for:
 
 Possible future improvements include:
 
-- User authentication and role-based access
-- Real payment gateway integration
-- Dedicated daily sales reports
-- Advanced sales analytics
-- Customer order history
-- Email/SMS notifications
-- WhatsApp notifications
-- Inventory management
-- Food stock tracking
-- Cloud database integration
-- Mobile application
-- Multiple canteen or branch support
+* User authentication and role-based access
+* Real payment gateway integration
+* Dedicated daily sales reports
+* Advanced sales analytics
+* Customer order history
+* Email/SMS notifications
+* WhatsApp notifications
+* Inventory management
+* Food stock tracking
+* Cloud database integration
+* Mobile application
+* Multiple canteen or branch support
 
 ---
 
@@ -398,11 +402,11 @@ This project was developed as part of a college hackathon software development c
 
 The objective was to design a software system that enables:
 
-- Digital menu display
-- Online order placement
-- Bill generation
-- Order status tracking
-- Sales monitoring
+* Digital menu display
+* Online order placement
+* Bill generation
+* Order status tracking
+* Sales monitoring
 
 The project was developed as a functional prototype within the hackathon development time.
 
@@ -412,14 +416,14 @@ The project was developed as a functional prototype within the hackathon develop
 
 Screenshots can be added here to demonstrate:
 
-- Common QR code
-- Customer menu
-- Cart and order placement
-- Order tracking
-- Kitchen dashboard
-- Waiter dashboard
-- Admin dashboard
-- Digital bill
+* Common QR code
+* Customer menu
+* Cart and order placement
+* Order tracking
+* Kitchen dashboard
+* Waiter dashboard
+* Admin dashboard
+* Digital bill
 
 ---
 
@@ -429,7 +433,7 @@ Screenshots can be added here to demonstrate:
 
 B.Sc. (Hons) Data Science and Artificial Intelligence
 
-University of Mysore
+Sarada Vilas College
 
 ---
 
